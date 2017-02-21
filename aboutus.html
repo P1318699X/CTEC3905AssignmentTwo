@@ -5,22 +5,31 @@
         <title>Snack Attack!</title>
         <link rel="stylesheet" href="css/stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|VT323|PT+Sans+Narrow|Audiowide" rel="stylesheet">
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/javascript.js"></script>
     </head>
     <body>
         <header id="header"></header>
         <main>
-            <section id="imageSlider">
-                <div id="imgTest">
-                    <img id="img1" src="images/astroneer.jpeg">
-                    <img id="img2" src="images/steep.jpeg">
-                    <img id="img3" src="images/killingfloor2.jpeg">
-                </div>
-                <div id="backDiv"><button id="backButton" type="button" value="Back">Back</button></div>
-                <div id="forwardDiv"><button id="forwardButton" type="button" value="Forward">Forward</button></div>
+            <section id="container">
+                <section id="containerButtons">
+                    <div id="backDiv"><button id="backButton" type="button" value="Back">Back</button></div>
+                    <div id="forwardDiv"><button id="forwardButton" type="button" value="Forward">Forward</button></div>
+                </section>
+                <section id="imageContainer">
+                    <div id="imgDiv1" style="display: inline-block"><img id="img1" src="images/astroneer.jpeg"></div>
+                    <div id="imgDiv2"><img id="img2" src="images/steep.jpeg"></div>
+                    <div id="imgDiv3"><img id="img3" src="images/killingfloor2.jpeg"></div>
+                </section>
+                <section id="textContainer">
+                    <div id="textDiv1" style="display: inline-block"></div>
+                    <div id="textDiv2"></div>
+                    <div id="textDiv3"></div>
+                </section>
             </section>
         </main>
         <footer id="footer"></footer>
     </body>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
 </html>

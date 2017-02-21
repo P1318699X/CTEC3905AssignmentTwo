@@ -1,50 +1,50 @@
 //Load Header and Footer for all pages.
 $(function(){
-    $("#header").load("partials/header.html");
+    $("header").load("partials/header.html");
     $("footer").load("partials/footer.html");
 });
 
-var backButtonVar = document.getElementById("backButton");
-var forwardButtonVar = document.getElementById("forwardButton");
+document.onload = (function(){
+    // For reference by the listeners
+    var backButtonVar = document.getElementById("backButton");
+    var forwardButtonVar = document.getElementById("forwardButton");
 
-function backBtn_Clicked()
-{
-    var pos1 = document.getElementById("img1").getTranslateX;
-    var pos2 = document.getElementById("img2").getTranslateX;
-    var pos3 = document.getElementById("img3").getTranslateX;
+    // Listeners
+    backButtonVar.addEventListener("click", backBtn_Clicked);
+    forwardButtonVar.addEventListener("click", forwardBtn_Clicked);
 
-    var checkOne = document.getElementById("img1");
-    var checkTwo = checkOne.style.transform;
-    console.log(checkTwo);
+    // For the carousel
+    var /* Index counter for the carousel */      index = 0, 
+        /* All the image DIVs in the container */ images = $('#imageContainer div'), 
+        /* The number of DIVs in the container */ imageCount = images.length;
 
-    pos1 -= 500;
-    pos2 -= 500;
-    pos3 -= 500;
+    function moveImages()
+    {
+        // If the index is less than zero, wrap around to the highest item in the list.
+        if      (index < 0)              index = imageCount - 1;
+        // If the index is more than the number of images, wrap down to zero.
+        else if (index > imageCount - 1) index = 0;
+        // Finds out what the image is being shown at the current index.
+        var image = $('#imageContainer div').eq(index);
+        // Hides the other images in the container.
+        images.hide();
+        // Sets the image at the index in question to show.
+        image.css('display','inline-block');
+    }
 
-    document.getElementById("img1").style.transform = 'translateX(' + pos1 + ')';
-}
+    // Back Button
+    function backBtn_Clicked()
+    {
+        //Index Decreased by 1
+        index -= 1;
+        moveImages();
+    }
 
-backButtonVar.addEventListener("click", backBtn_Clicked);
-
-function forwardBtn_Clicked()
-{
-    
-}
-
-function getTranslateX(obj)
-{
-    var style = obj.style,
-        transform = style.transform || style.webkitTransform || style.mozTransform,
-        xT = transform.match(/translateX\(([0-9])\)/);
-    return xT ? xT[1] : '0';
-}
-
-function getComputedTranslateX(obj)
-{
-    if(!window.getComputedStyle) return;
-    var style = getComputedStyle(obj),
-        transform = style.transform || style.webkitTransform || style.mozTransform;
-    var mat = transform.match(/^matrix3d\((.+)\)$/);
-    return mat ? ~~(mat[1].split(', ')[14]) : 0;
-}
-
+    // Forward Button
+    function forwardBtn_Clicked()
+    {
+        //Index Increased by 1
+        index += 1;
+        moveImages();
+    }
+}());

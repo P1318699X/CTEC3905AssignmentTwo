@@ -154,16 +154,26 @@ section p {
     color: #360452; 
 }
 
-#imageSlider {
+#imageContainer {
+    max-width: 400px;
     position: relative;
-    overflow: hidden;
+    text-align: center;
     height: 320px;
+    margin-left: 150px;
 }
 
-#imgTest img {
-    position: absolute;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
+#imageContainer div {
+    display: inline-block;
+    display: none;
+    width: 100%;
+}
+
+#imageContainer img {
+    width: 100%;
+}
+
+#imgDiv1 {
+    display: inline-block;
 }
 
 #backDiv, #forwardDiv {
@@ -185,17 +195,3 @@ section p {
     right: 30px;
 }
 
-#img1 {
-    transform: translateX(385px);
-    width: 500px;
-}
-
-#img2 {
-    transform: translateX(985px);
-    width: 500px;
-}
-
-#img3 {
-    transform: translateX(-215px);
-    width: 500px;
-}
