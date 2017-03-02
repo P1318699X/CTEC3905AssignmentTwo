@@ -154,44 +154,58 @@ section p {
     color: #360452; 
 }
 
+#container {
+    position: relative;
+    overflow: hidden;
+    max-height: 340px;
+    display: flex;
+}
+
+#container button {
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    vertical-align: middle;
+    overflow: hidden;
+    top: calc(50% - 30px);
+}
+
+#backButton {
+    left: 30px;
+}
+
+#forwardButton {
+    right: 30px;
+}
+
 #imageContainer {
-    max-width: 400px;
+    max-width: 450px;
     position: relative;
     text-align: center;
     height: 320px;
     margin-left: 150px;
+    overflow: hidden;
+    float: left;
 }
 
 #imageContainer div {
-    display: inline-block;
     display: none;
-    width: 100%;
 }
 
 #imageContainer img {
     width: 100%;
-}
-
-#imgDiv1 {
-    display: inline-block;
-}
-
-#backDiv, #forwardDiv {
-    position: absolute;
-    top: 47%;
-}
-
-#backDiv button, #forwardDiv button {
-    height: 30px;
-    width: 80px;
+    height: 250px;
+    border-radius: 2%;
     vertical-align: middle;
 }
 
-#backDiv {
-    left: 30px;
+#textContainer {
+    max-width: 450px;
+    position: relative;
+    text-align: center;
+    height: 320;
+    margin-right: 150px;
+    background-color: #E2DBE5;
+    overflow: hidden;
+    float: right;
 }
-
-#forwardDiv {
-    right: 30px;
-}
-
