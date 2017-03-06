@@ -81,7 +81,6 @@ footer {
 footer article {
     margin-top: 15px;
     margin-bottom: 15px;
-    height: 300px;
     text-align: center;
     vertical-align: middle;
     color: #FFFFFF;
@@ -212,3 +211,37 @@ section p {
     margin-bottom: 35px;
     background-color: #E2DBE5;
 }
+
+#members table {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px auto;
+}
+
+#members table tr td {
+    width: 182px;
+    height: 182px;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+#members table tr td span {
+    font-family:  'PT Sans Narrow', sans-serif;
+}
+
+#charlie    {background-image: url("../images/charlie.jpeg");}
+#david      {background-image: url("../images/david.jpeg");}
+#jonathan   {background-image: url("../images/jonathan.jpeg");}
+#fille      {background-image: url("../images/fille.jpeg");}
+#alex       {background-image: url("../images/alex.jpeg");}
+#kaffe      {background-image: url("../images/kaffe.jpeg");}
+#vanil      {background-image: url("../images/vanil.jpeg");}
+#perdy      {background-image: url("../images/perdy.jpeg");}
+#gregg      {background-image: url("../images/gregg.jpeg");}
+#hector     {background-image: url("../images/hector.jpeg");}
+#rob        {background-image: url("../images/rob.jpeg");}
+#chris      {background-image: url("../images/chris.jpeg");}
+#morten     {background-image: url("../images/morten.jpeg");}
+#kip        {background-image: url("../images/kip.jpeg");}
+#joe        {background-image: url("../images/joe.jpeg");}
