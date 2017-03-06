@@ -135,25 +135,25 @@ main {
     float: right;
 }
 
-section h2 {
+#sectionOneText h2 {
     font-family: 'Audiowide', cursive;
     font-size: 22px;
     color: #5E3375; 
     text-align: center;
 }
 
-section p {
+#sectionOneText p {
     font-family:  'PT Sans Narrow', sans-serif;
     color: #360452; 
 }
 
-#container {
+#carousel {
     position: relative;
     overflow: hidden;
     max-height: 340px;
 }
 
-#container button {
+#carousel button {
     position: absolute;
     height: 30px;
     width: 80px;
@@ -221,14 +221,53 @@ section p {
 
 #members table tr td {
     width: 182px;
+    min-width: 182px;
     height: 182px;
+    min-height: 182px;
     border: 0;
     background-repeat: no-repeat;
 }
 
-#members table tr td span {
-    font-family:  'PT Sans Narrow', sans-serif;
+#members table tr td div {
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    text-align: center;
 }
+
+#members table tr td div p {
+    top: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #FFFFFF;
+}
+
+#breakHeader {
+    font-size: 26px;
+    background-color: #BBAAC4;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    overflow: hidden;
+    height: 54px;
+}
+
+#breakHeader h2 {
+    margin: 0px auto;
+}
+
+#charlie:hover #charlieCap      {visibility: visible;}
+#david:hover #davidCap          {visibility: visible;}
+#jonathan:hover #jonathanCap    {visibility: visible;}
+#fille:hover #filleCap          {visibility: visible;}
+#alex:hover #alexCap            {visibility: visible;}
+#kaffe:hover #kaffeCap          {visibility: visible;}
+#vanil:hover #vanilCap          {visibility: visible;}
+#perdy:hover #perdyCap          {visibility: visible;}
+#gregg:hover #greggCap          {visibility: visible;}
+#hector:hover #hectorCap       {visibility: visible;}
+#rob:hover #robCap              {visibility: visible;}
+#ollie:hover #ollieCap          {visibility: visible;}
+#morten:hover #mortenCap        {visibility: visible;}
+#kip:hover #kipCap              {visibility: visible;}
+#joe:hover #joeCap              {visibility: visible;}
 
 #charlie    {background-image: url("../images/charlie.jpeg");}
 #david      {background-image: url("../images/david.jpeg");}
@@ -241,7 +280,7 @@ section p {
 #gregg      {background-image: url("../images/gregg.jpeg");}
 #hector     {background-image: url("../images/hector.jpeg");}
 #rob        {background-image: url("../images/rob.jpeg");}
-#chris      {background-image: url("../images/chris.jpeg");}
+#ollie      {background-image: url("../images/ollie.jpeg");}
 #morten     {background-image: url("../images/morten.jpeg");}
 #kip        {background-image: url("../images/kip.jpeg");}
 #joe        {background-image: url("../images/joe.jpeg");}
