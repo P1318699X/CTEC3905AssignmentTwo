@@ -222,7 +222,7 @@ h3 {
     margin: 0px auto;
 }
 
-#members table tr td {
+td {
     width: 182px;
     min-width: 182px;
     height: 182px;
@@ -290,24 +290,33 @@ h3 {
 #kip        {background-image: url(../images/kip.jpeg);}
 #joe        {background-image: url(../images/joe.jpeg);}
 
-#adminBlocks {
-    height: 500px;
+#adminContainer {
+    background-color: #382941;
+    overflow: hidden;
 }
 
 #JSONData {
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
-    margin: 0px auto;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    top:10px;
+}
+
+#JSONData tr {
+    align-content: center;
 }
 
 #JSONData tr td {
-    width: 182px;
-    min-width: 182px;
-    height: 182px;
-    min-height: 182px;
-    border: 0;
-    background-repeat: no-repeat;
+    padding: 0px auto;
+    vertical-align: middle;
 }
 
 #JSONData tr td div {
@@ -318,4 +327,19 @@ h3 {
 #JSONData tr td div p {
     color: #FFFFFF;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#buttonContainer {
+    width: 150px;
+    float: left;
+}
+
+#adminContainer button {
+    height: 40px;
+    width: 120px;
+    color: #FFFFFF;
+    display: block;
+    background-color: #30193D;
+    margin: 10px;
+    overflow: hidden;
 }

@@ -27,7 +27,7 @@ document.onload = (function(){
             {"Name" : "Gregg",    "Alias" : "SergeantSauce",          "Role" : "Channel Moderator",     "ImageURL" : "images/gregg.jpeg"}
     ];
 
-    function clearTable() {$("#adminBlocks table tbody tr").remove();}
+    function clearTable() {$("#JSONData tbody tr").remove();}
     function iterateJSON(role) {
         var row = JSONTable.insertRow(0);
         for (var i = 0; i < discordObject.length; i++)
@@ -36,8 +36,8 @@ document.onload = (function(){
             if (obj.Role == role)
             {
                 var cell = row.insertCell(0);
-                cell.innerHTML = "<div><p>" + obj.Name + "<br><br>" + obj.Alias + "</p></div>";
-                cell.style.background = "url('" + obj.ImageURL + "')";
+                cell.innerHTML = "<div><p>" + obj.Name + "<br><br>Nickname on Server:<br>" + obj.Alias + "</p></div>";
+                cell.style.background = "url('" + obj.ImageURL + "') no-repeat";
             }   
         }
     }
