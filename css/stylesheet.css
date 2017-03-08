@@ -1,9 +1,8 @@
 /* 
  *   font-family: 'PT Sans Narrow', sans-serif;         -- Main Text
  *   font-family: 'VT323', monospace;                   -- Title (in Header)
- *   font-family: 'Roboto', sans-serif;                 -- Navbar
- *   font-family: 'Open Sans Condensed', sans-serif;    -- Footer
- *   font-family: 'Audiowide', cursive;
+ *   font-family: 'Roboto', sans-serif;                 -- Navbar, Headers
+ *   font-family: 'Open Sans Condensed', sans-serif;    -- Footer, Headers
  */
 
 /* --- Monitors and Laptop Screens --- */
@@ -104,6 +103,13 @@ main {
     background-color: #987DA7;
 }
 
+h3 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #5E3375;
+    font-size: 22px;
+    text-align: center;
+}
+
 #sectionOne {
     overflow: hidden;
 }
@@ -133,13 +139,6 @@ main {
     width: 500px;
     height: 250px;
     float: right;
-}
-
-#sectionOneText h2 {
-    font-family: 'Audiowide', cursive;
-    font-size: 22px;
-    color: #5E3375; 
-    text-align: center;
 }
 
 #sectionOneText p {
@@ -212,6 +211,10 @@ main {
     background-color: #E2DBE5;
 }
 
+#textContainer div p {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 #members table {
     text-align: center;
     padding-left: 50px;
@@ -241,16 +244,18 @@ main {
 }
 
 #breakHeader {
-    font-size: 26px;
     background-color: #BBAAC4;
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif;
     overflow: hidden;
     height: 54px;
 }
 
 #breakHeader h2 {
     margin: 0px auto;
+    font-size: 36px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 #charlie:hover #charlieCap      {visibility: visible;}
@@ -262,25 +267,55 @@ main {
 #vanil:hover #vanilCap          {visibility: visible;}
 #perdy:hover #perdyCap          {visibility: visible;}
 #gregg:hover #greggCap          {visibility: visible;}
-#hector:hover #hectorCap       {visibility: visible;}
+#hector:hover #hectorCap        {visibility: visible;}
 #rob:hover #robCap              {visibility: visible;}
 #ollie:hover #ollieCap          {visibility: visible;}
 #morten:hover #mortenCap        {visibility: visible;}
 #kip:hover #kipCap              {visibility: visible;}
 #joe:hover #joeCap              {visibility: visible;}
 
-#charlie    {background-image: url("../images/charlie.jpeg");}
-#david      {background-image: url("../images/david.jpeg");}
-#jonathan   {background-image: url("../images/jonathan.jpeg");}
-#fille      {background-image: url("../images/fille.jpeg");}
-#alex       {background-image: url("../images/alex.jpeg");}
-#kaffe      {background-image: url("../images/kaffe.jpeg");}
-#vanil      {background-image: url("../images/vanil.jpeg");}
-#perdy      {background-image: url("../images/perdy.jpeg");}
-#gregg      {background-image: url("../images/gregg.jpeg");}
-#hector     {background-image: url("../images/hector.jpeg");}
-#rob        {background-image: url("../images/rob.jpeg");}
-#ollie      {background-image: url("../images/ollie.jpeg");}
-#morten     {background-image: url("../images/morten.jpeg");}
-#kip        {background-image: url("../images/kip.jpeg");}
-#joe        {background-image: url("../images/joe.jpeg");}
+#charlie    {background-image: url(../images/charlie.jpeg);}
+#david      {background-image: url(../images/david.jpeg);}
+#jonathan   {background-image: url(../images/jonathan.jpeg);}
+#fille      {background-image: url(../images/fille.jpeg);}
+#alex       {background-image: url(../images/alex.jpeg);}
+#kaffe      {background-image: url(../images/kaffe.jpeg);}
+#vanil      {background-image: url(../images/vanil.jpeg);}
+#perdy      {background-image: url(../images/perdy.jpeg);}
+#gregg      {background-image: url(../images/gregg.jpeg);}
+#hector     {background-image: url(../images/hector.jpeg);}
+#rob        {background-image: url(../images/rob.jpeg);}
+#ollie      {background-image: url(../images/ollie.jpeg);}
+#morten     {background-image: url(../images/morten.jpeg);}
+#kip        {background-image: url(../images/kip.jpeg);}
+#joe        {background-image: url(../images/joe.jpeg);}
+
+#adminBlocks {
+    height: 500px;
+}
+
+#JSONData {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px auto;
+}
+
+#JSONData tr td {
+    width: 182px;
+    min-width: 182px;
+    height: 182px;
+    min-height: 182px;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+#JSONData tr td div {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#JSONData tr td div p {
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+}

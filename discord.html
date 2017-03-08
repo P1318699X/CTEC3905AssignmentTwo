@@ -5,9 +5,26 @@
         <title>Snack Attack!</title>
         <link rel="stylesheet" href="css/stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto|VT323|PT+Sans+Narrow|Audiowide" rel="stylesheet">
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/javascript.js"></script>
     </head>
     <body>
+        <header id="header"></header>
+        <main>
+            <section id="breakHeader"><h2>Administrators and Moderators</h2></section>
+            <div id="adminContainer">
+                <button id="serverOwner" type="button" value="ServerOwner">Server Owner</button>
+                <button id="serverAdministrators" type="button" value="ServerAdministrators">Server Administrators</button>
+                <button id="channelAdministrators" type="button" value="ChannelAdministrators">Channel Administrators</button>
+                <button id="channelModerators" type="button" value="ChannelModerators">Channel Moderators</button>
+                <div id="adminBlocks">
+                    <table id="JSONData"></table>
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
     </body>
+    <head>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/partials.js"></script>
+        <script type="text/javascript" src="js/discord.js"></script>
+    </head>
 </html>

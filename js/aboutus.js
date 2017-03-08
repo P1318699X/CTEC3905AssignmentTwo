@@ -1,24 +1,19 @@
-//Load Header and Footer for all pages.
-$(function(){
-    $("header").load("partials/header.html");
-    $("footer").load("partials/footer.html");
-});
-
 document.onload = (function(){
     // For reference by the listeners
-    var backButtonVar = document.getElementById("backButton");
+    var backButtonVar    = document.getElementById("backButton");
     var forwardButtonVar = document.getElementById("forwardButton");
+
 
     // Listeners
     backButtonVar.addEventListener("click", backBtn_Clicked);
     forwardButtonVar.addEventListener("click", forwardBtn_Clicked);
 
-    // For the carousel
-    var /* Index counter for the carousel */                index = 0, 
-        /* All the image DIVs in the container */           images = $('#imageContainer div'), 
-        /* The number of DIVs in the image container */     imageCount = images.length,
-        /* All the text DIVs in the container */            blocks = $('#textContainer div'),
-        /* The number of DIVs in the text container*/       blockCount = text.length;
+    // For the carousel in AboutUs.html
+    var /* Index counter for the carousel */                index       = 0, 
+        /* All the image DIVs in the container */           images      = $('#imageContainer div'), 
+        /* The number of DIVs in the image container */     imageCount  = images.length,
+        /* All the text DIVs in the container */            blocks      = $('#textContainer div'),
+        /* The number of DIVs in the text container*/       blockCount  = text.length;
 
     function moveItems()
     {
