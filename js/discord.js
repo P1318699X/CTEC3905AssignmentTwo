@@ -5,6 +5,7 @@ document.onload = (function(){
     var    chanAdButtonVar  = document.getElementById("channelAdministrators");
     var    chanModButtonVar = document.getElementById("channelModerators");
     
+    // JSON Table
     let    JSONTable = document.getElementById("JSONData");
    
     // Button Listeners

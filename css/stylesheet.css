@@ -343,3 +343,18 @@ td {
     margin: 10px;
     overflow: hidden;
 }
+
+#clips {
+    overflow: hidden;
+}
+
+#clipContainer1 {
+    float: left;
+    overflow: hidden;
+}
+
+#clipContainer2 {
+    float: right;
+    overflow: hidden;
+    position: relative
+}
