@@ -24,13 +24,13 @@ header h1 a:link, header h1 a:visited {
     color: #FFFFFF;
 }
 
-nav {   
+#mainNav {   
     background-color: #5E3375;
     text-align: center; 
     overflow: hidden;  
 }
 
-nav ul {   
+#mainNav ul {   
     list-style-type: none;  
     overflow: hidden; 
     margin: 0; 
@@ -39,7 +39,7 @@ nav ul {
     vertical-align: top; 
 }
 
-nav ul li {   
+#mainNav ul li {   
     display: inline;
     /* 
      * If you're using VS Code, it may complain that this property is ignored due
@@ -50,7 +50,7 @@ nav ul li {
     float: left; 
 }
 
-nav ul li a {   
+#mainNav ul li a {   
     display: block;  
     padding: 10px;
     margin-left: 40px;
@@ -61,11 +61,11 @@ nav ul li a {
     font-style: none;
 }
 
-nav ul li a:link, nav ul li a:visited  {   
+#mainNav ul li a:link, nav ul li a:visited  {   
     text-decoration: none;  
 }
 
-nav ul li a:hover {
+#mainNav ul li a:hover {
     background-color: #987DA7;
 }
 
@@ -150,6 +150,7 @@ h3 {
 }
 
 #sectionTwoImage {
+    padding-right: 5px;
     float: left;
 }
 
@@ -376,4 +377,39 @@ td {
     padding-left: 70px;
     padding-right: 70px;
     font-family:  'PT Sans Narrow', sans-serif;
+}
+
+@media screen and (max-width: 1250px) {
+    #sectionOneText, #sectionTwoText {
+        width: 500px;
+        height: 300px;
+        float: none;
+    }
+
+    #sectionOneImage, #sectionTwoImage {
+        float: none;
+        max-width: 500px;
+        max-height: 250px;
+        padding-right: 0px;
+        padding-left: 5px;
+    }
+
+    #clipContainer1, #clipContainer2, #davidChannel, #charlieChannel {
+        float: none;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #mainNav {
+        display: table-caption;
+        width: 100%;
+    }
+
+    #mainNav li {
+        width: 100%;
+    }
 }
