@@ -344,17 +344,16 @@ td {
     overflow: hidden;
 }
 
-#clips {
+#clips, #channels {
     overflow: hidden;
 }
 
-#clipContainer1 {
+#clipContainer1, #davidChannel {
     float: left;
     overflow: hidden;
 }
 
-#clipContainer2 {
+#clipContainer2, #charlieChannel {
     float: right;
     overflow: hidden;
-    position: relative
 }
