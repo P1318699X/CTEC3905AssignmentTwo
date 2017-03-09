@@ -162,7 +162,6 @@ h3 {
 #carousel {
     position: relative;
     overflow: hidden;
-    max-height: 340px;
 }
 
 #carousel button {
@@ -394,12 +393,34 @@ td {
         padding-left: 5px;
     }
 
+    #carousel {
+        max-height: auto;
+    }
+
     #clipContainer1, #clipContainer2, #davidChannel, #charlieChannel {
         float: none;
     }
 
     iframe {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #imageContainer, #textContainer {
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #imageContainer {
+        margin-top: 80px;
+        padding-top: 0px;
+    }
+
+    #carousel button {
+        top: 5%;
+        
     }
 }
 
@@ -412,4 +433,30 @@ td {
     #mainNav li {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 570px) {
+    #sectionOneText, #sectionTwoText {
+        width: 80%;
+        height: 360px;
+    }
+
+    #sectionOneImage, #sectionTwoImage {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #backButton {
+        left: 0;
+    }
+
+    #forwardButton {
+        right: 0;
+    }
+
+    #imageContainer, #textContainer, #textContainer div {
+        width: 95%;
+    }
+
 }
