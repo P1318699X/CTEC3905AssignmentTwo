@@ -110,38 +110,50 @@ h3 {
     text-align: center;
 }
 
-#sectionOne {
+#sectionOne, #sectionTwo {
     overflow: hidden;
+}
+
+#sectionOneText, #sectionTwoText {
+    overflow: hidden;
+    margin: 25px;
+    padding: 5px;
+    width: 50%;
+    height: 240px;
+    background-color: #E2DBE5;
+    border-radius: 10px;
 }
 
 #sectionOneText {
-    overflow: hidden;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    padding: 5px;
-    width: 45%;
-    background-color: #E2DBE5;
-    border-radius: 10px;
     float: left;
 }
 
-#sectionOneImage {
-    overflow: hidden;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    padding-left: 5px;
-    width: 45%;
-    border-radius: 10px;
-    width: 500px;
-    height: 250px;
+#sectionTwoText {
     float: right;
 }
 
-#sectionOneText p {
+#sectionOneImage, #sectionTwoImage {
+    overflow: hidden;
+    margin: 25px;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+}
+
+#sectionOneImage img, #sectionTwoImage img {
+    border-radius: 10px;
+}
+
+#sectionOneImage {
+    padding-left: 5px;
+    float: right;
+}
+
+#sectionTwoImage {
+    float: left;
+}
+
+#sectionOneText p, #sectionTwoText p {
     font-family:  'PT Sans Narrow', sans-serif;
     color: #360452; 
 }
@@ -356,4 +368,12 @@ td {
 #clipContainer2, #charlieChannel {
     float: right;
     overflow: hidden;
+}
+
+#clipsText, #channelsText, #adminText, #membersText {
+    background-color: #E2DBE5;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family:  'PT Sans Narrow', sans-serif;
 }

@@ -10,8 +10,17 @@
     <body>
         <header id="header"></header>
         <main>
-            <section id="breakHeader"><h2>Administrators and Moderators</h2></section>
-            <div id="adminContainer">
+            <div id="breakHeader"><h2>Administrators and Moderators</h2></div>
+            <section id="adminContainer">
+                <div id="adminText">
+                    <p>
+                        Here, you can browse through who our Administrators and Moderators are on our Discord server.
+                        If you are wanting to join our Discord server or have a problem you wish to report,
+                        you can contact one of the members listed on this page for assistance.
+                        <br><br>
+                        Please keep in mind that abusing this information can result in either a temporary or permanent ban from the server.
+                    </p>
+                </div>
                 <div id="buttonContainer">
                     <button id="serverOwner" type="button" value="ServerOwner">Server Owner</button>
                     <button id="serverAdministrators" type="button" value="ServerAdministrators">Server Administrators</button>
@@ -19,7 +28,7 @@
                     <button id="channelModerators" type="button" value="ChannelModerators">Channel Moderators</button>
                 </div>
                 <table id="JSONData"></table>
-            </div>
+            </section>
         </main>
         <footer id="footer"></footer>
     </body>
