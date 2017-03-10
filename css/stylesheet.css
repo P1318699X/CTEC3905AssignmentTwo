@@ -227,11 +227,19 @@ h3 {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+#tableContainer {
+    overflow-x: auto;
+}
+
 #members table {
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
     margin: 0px auto;
+}
+
+#tableSub {
+    display: none;
 }
 
 td {
@@ -320,6 +328,7 @@ td {
     position: relative;
     vertical-align: middle;
     top:10px;
+    overflow-x: auto;
 }
 
 #JSONData tr {
@@ -420,7 +429,13 @@ td {
 
     #carousel button {
         top: 5%;
-        
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #members table {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 
@@ -458,5 +473,4 @@ td {
     #imageContainer, #textContainer, #textContainer div {
         width: 95%;
     }
-
 }
