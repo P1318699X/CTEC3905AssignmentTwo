@@ -14,6 +14,7 @@ document.onload = (function(){
     chanAdButtonVar.addEventListener("click", chanAdButton_Clicked);
     chanModButtonVar.addEventListener("click", chanModButton_Clicked);
 
+    // JSON Object Containing Discord Administrators and Moderators
     var discordObject = 
     [
             {"Name" : "Charlie",  "Alias" : "OmnipotentMidget",       "Role" : "Owner",                 "ImageURL" : "images/charlie.jpeg"},
@@ -28,20 +29,31 @@ document.onload = (function(){
             {"Name" : "Gregg",    "Alias" : "SergeantSauce",          "Role" : "Channel Moderator",     "ImageURL" : "images/gregg.jpeg"}
     ];
 
+    //Clears the table before new cells are inserted.
     function clearTable() {$("#JSONData tbody tr").remove();}
+
+    // Iterates through the JSON object and inserts a new cell for any user matching the role.
     function iterateJSON(role) {
         var row = JSONTable.insertRow(0);
         for (var i = 0; i < discordObject.length; i++)
         {
+            // Feeds the current item in the object into a new Var
             var obj = discordObject[i];
+            // Evaluates the role of the user at that position to see if it matches the one fed into the function
             if (obj.Role == role)
             {
+                // If the roles are a match, a new cell is created
                 var cell = row.insertCell(0);
+                // The cell is populated with the name and nickname of the Administrator/Moderator
                 cell.innerHTML = "<div><p>" + obj.Name + "<br><br>Nickname on Server:<br>" + obj.Alias + "</p></div>";
+                // And the background image of the cell is set according to the URL given in the JSON object
                 cell.style.background = "url('" + obj.ImageURL + "') no-repeat";
             }   
         }
     }
+
+    // The four following functions correspond to the four buttons in the HTML file.
+    // Each one supplies a different role to the 'iterateJSON' function.
 
     function servOwnButton_Clicked() {
         clearTable();
