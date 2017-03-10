@@ -320,7 +320,6 @@ td {
     padding-left: 50px;
     padding-right: 50px;
     margin: 0 auto;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -329,6 +328,7 @@ td {
     vertical-align: middle;
     top:10px;
     overflow-x: auto;
+    width: 100%;
 }
 
 #JSONData tr {
@@ -429,6 +429,12 @@ td {
 
     #carousel button {
         top: 5%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #JSONData {
+        display: block;
     }
 }
 
