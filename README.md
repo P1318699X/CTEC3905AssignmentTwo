@@ -2,6 +2,7 @@
 CTEC3905 - Front End Web Development. Second Assignment.
 
 Link to Repo: https://github.com/P1318699X/CTEC3905AssignmentTwo
+Link to GitHub Pages Site: https://p1318699x.github.io/CTEC3905AssignmentTwo/
 
 File Structure:
     readme.md
